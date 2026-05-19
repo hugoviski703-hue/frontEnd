@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .corsim {
+            color: green;
+        }
+        .cornao {
+            color: red;
+        }
+        </style>
+
+        <input type="text" id = "fruta" placeholder="Digite o nome da fruta"/>
+        <select name="" id="nomeClass">
+            <option value="">Selecione</option>
+            <option value="corsim">corsim</option>
+            <option value="cornao">cornao</option>
+        </select>
+        <button onclick="CadastrarFruta()" type="button">Cadastrar</button>
+        <ul id="listaFrutas">
+          <li class="corsim">Amora</li>
+          <li class="cornao">abacaxi</li>
+        </ul>
+
+        <script>
+            function CadastrarFruta(){
+                const fruta = document.getElementById("fruta").value;
+                const nomeClass = document.getElementById("nomeClass").value;
+                const listaFrutas = document.getElementById("listaFrutas");
+
+                //validar se a campo fruta e nomeClass estão preenchidos
+                if(fruta.trim().length == 0 || nomeClass.trim().length == 0){
+                    alert("Preencha todos os campos");
+                    return false;
+                }
+
+                //cadastrar a fruta na lista
+               listaFrutas.innerHTML += `<li class="${nomeClass}">${fruta}</li>`;
+
+
+               //limpar os campos
+                document.getElementById("fruta").value = "";
+                document.getElementById("nomeClass").value = "";
+                // console.log(fruta);
+                // console.log(listaFrutas);
+                // console.log(nomeClass)
+
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+*{
+    /* reset css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+section: borda, padding
+altura 800px
+largura 920px centralizada
+*/
+
+/*
+article: cor de fundo, cor do texto
+deixar em coluna centralizado, nos dois eixos
+*/
+
+.sessao-noticias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 1px dashed salmon;
+    flex-direction: column;
+    width: 920px;
+    height: 800px;
+}
+
+/*
+article: cor de fundo, cor do texto
+deixar em coluna centralizado, nos dois eixos
+*/
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noticia{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(28, 34, 215);
+    color: rgb(36, 205, 28);
+        display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}

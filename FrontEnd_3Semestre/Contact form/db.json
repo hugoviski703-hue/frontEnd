@@ -1,0 +1,152 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contatos": [
+    {
+      "nome": "jumento",
+      "sobrenome": "souza",
+      "id": "1"
+    },
+    {
+      "nome": "Marcos",
+      "sobrenome": "Lima",
+      "id": "2"
+    },
+    {
+      "nome": "Matheus",
+      "sobrenome": "Latorre",
+      "id": "le8iaqZh5NM"
+    },
+    {
+      "nome": "eu",
+      "sobrenome": "awdda",
+      "id": "E8yZgctLf1Y"
+    },
+    {
+      "nome": "asasa",
+      "sobrenome": "sasa",
+      "id": "ip36CEXp95w"
+    },
+    {
+      "nome": "teste",
+      "sobrenome": "eueu",
+      "id": "jo9pI8bg1fg"
+    },
+    {
+      "nome": "pppa",
+      "sobrenome": "aaa",
+      "id": "j3AjcFBlAK8"
+    },
+    {
+      "nome": "yasmin",
+      "sobrenome": "souza",
+      "id": "rI47D6wqN_0"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "gKeM5v5ndP4"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "dVtQKb3pkpc"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "BrbuCBS8MRs"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "FY-Vk6BSVCw"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "email": "",
+      "telefone": "",
+      "cep": "",
+      "rua": "",
+      "numero": "",
+      "cidade": "",
+      "estado": "",
+      "complemento": "",
+      "bairro": "",
+      "anotacoes": "            ",
+      "id": "jbCV410_JFs"
+    },
+    {
+      "nome": "Francisco Hugo",
+      "sobrenome": "Ximenes Sales",
+      "email": "beltrano@gmail.com",
+      "telefone": "55+99729201411997292014",
+      "cep": "04240020",
+      "rua": "Rua Luigi Alamanni",
+      "numero": "",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "complemento": "",
+      "bairro": "São João Clímaco",
+      "anotacoes": "            ",
+      "id": "6ZgQehV2ZRM"
+    },
+    {
+      "nome": "francicso hugiasfsd",
+      "sobrenome": "efsfsfs",
+      "email": "sfessfesfs@gmail.com",
+      "telefone": "121981092121121121212",
+      "cep": "04240020",
+      "rua": "Rua Luigi Alamanni",
+      "numero": "144",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "complemento": "2121",
+      "bairro": "São João Clímaco",
+      "anotacoes": "      salslaslal",
+      "id": "_pp588UmZfw"
+    },
+    {
+      "nome": "lucass",
+      "sobrenome": "marinho",
+      "email": "lucas@gmail.com",
+      "telefone": "9999911983152780",
+      "cep": "04240020",
+      "rua": "Rua Luigi Alamanni",
+      "numero": "1455",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "complemento": "bloco 12",
+      "bairro": "São João Clímaco",
+      "anotacoes": "            lucas marinoh é louco",
+      "id": "i6CZvsVsK2Q"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

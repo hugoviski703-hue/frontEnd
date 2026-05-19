@@ -1,0 +1,223 @@
+{
+  "usuarios": [
+    {
+      "nome": "Marcos Vinicius MAurivan Junior",
+      "email": "Maurivan@gmail.com",
+      "id": "1"
+    },
+    {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "idade": 30,
+      "id": "VRvi8LHWYGQ"
+    },
+    {
+      "name": "Gustavinho",
+      "email": "Gustavinho@gmail.com",
+      "idade": 18,
+      "id": "EXTP8V7MNV0"
+    },
+    {
+      "name": "Bruno",
+      "email": "BrunoFadorex@gmail.com",
+      "idade": 17,
+      "id": "DFkoiBmVTd0"
+    }
+  ],
+  "frutas": [
+    {
+      "id": "1",
+      "nome": "Maçã",
+      "preco": 3.5
+    },
+    {
+      "id": "2",
+      "nome": "Banana",
+      "preco": 2
+    }
+  ],
+  "jogos": [
+    {
+      "id": "1",
+      "titulo": "The Legend of Zelda: Breath of the Wild",
+      "genero": "Ação/Aventura"
+    },
+    {
+      "id": "2",
+      "titulo": "Super Mario Odyssey",
+      "genero": "Plataforma"
+    }
+  ],
+  "Post": [
+    {
+      "id": "1",
+      "titulo": "Meu primeiro post",
+      "descricao": "Este é o conteúdo do meu primeiro post.",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTJFr_dM-3IFMPkBh-2C9pETZ0jz6GLashpQ&s",
+      "curtidas": 5
+    },
+    {
+      "id": "2",
+      "titulo": "Outro post interessante",
+      "descricao": "Aqui está o conteúdo de outro post interessante.",
+      "foto": "https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-abstract-cloudy-background-beautiful-natural-streaks-of-sky-and-clouds-red-image_15684333.jpg",
+      "curtidas": 10
+    },
+    {
+      "titulo": "POst do gusta",
+      "descricao": "gustaShow",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg47eFlV8rWKN494sIElBLRwG4en1L_Y1fkw&s",
+      "curtidas": 320,
+      "id": "HTjqiSLWvSQ"
+    }
+  ],
+  "imc": [
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "_EdfrH1qY9o"
+    },
+    {
+      "nome": "lucas",
+      "altura": 1.85,
+      "peso": 70,
+      "imc": 20.45288531775018,
+      "situacao": "Saudável",
+      "id": "FmToc2bLGHM"
+    },
+    {
+      "nome": "Joao",
+      "altura": 1.67,
+      "peso": 70,
+      "imc": 25.099501595611173,
+      "situacao": "Sobrepeso",
+      "id": "dx-bIbAVQVs"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "A8JybBhDsG0"
+    },
+    {
+      "nome": "Francisco Hugo",
+      "altura": 1.71,
+      "peso": 63,
+      "imc": 21.545090797168363,
+      "situacao": "Saudável",
+      "id": "HPmaRpgwC_o"
+    },
+    {
+      "nome": "Akice",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "HArYOu4kGr0"
+    },
+    {
+      "nome": "bruno",
+      "altura": 2.5,
+      "peso": 301,
+      "imc": 48.16,
+      "situacao": "Obesidade Grau III (considerada mórbida)",
+      "id": "fNbMUoJx-RU"
+    },
+    {
+      "nome": "carlos",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "lpFazAx6vLE"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "Trtv4QayEwc"
+    },
+    {
+      "nome": "eeduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "BZQ_xWe2IQ8"
+    },
+    {
+      "nome": "u",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "akd15iGzIyU"
+    }
+  ],
+  "calculadora": [
+    {
+      "numero1": 12,
+      "numero2": 12,
+      "operacao": "soma",
+      "resultado": "24.00",
+      "id": "fWLXGYEjm-0"
+    },
+    {
+      "numero1": 15,
+      "numero2": 15,
+      "operacao": "soma",
+      "resultado": "30.00",
+      "id": "5ztYtWqU7mE"
+    },
+    {
+      "numero1": 12,
+      "numero2": 14,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "nhr-EqwWmSQ"
+    },
+    {
+      "numero1": 14,
+      "numero2": 14,
+      "operacao": "subtracao",
+      "resultado": "0.00",
+      "id": "PTgVaINIsbw"
+    },
+    {
+      "numero1": 2,
+      "numero2": null,
+      "operacao": "",
+      "resultado": "Operação Inválida",
+      "id": "Tu8xcxrm7q8"
+    },
+    {
+      "numero1": 3,
+      "numero2": 2,
+      "operacao": "soma",
+      "resultado": "5.00",
+      "id": "48WACnO6TME"
+    },
+    {
+      "numero1": 2,
+      "numero2": 4,
+      "operacao": "subtracao",
+      "resultado": "-2.00",
+      "id": "9gTzmOA397U"
+    },
+    {
+      "numero1": 8,
+      "numero2": 0,
+      "operacao": "subtracao",
+      "resultado": "8.00",
+      "id": "a75c9fuP2rg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

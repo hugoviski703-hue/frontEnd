@@ -1,0 +1,23 @@
+{
+  "produtos": [
+    {
+      "titulo": "teste ",
+      "categoria": "testettte",
+      "descricao": "",
+      "preco": 2,
+      "estoque": 2,
+      "imagem": "hero.png",
+      "id": "_W8UbaO4Qjo"
+    },
+    {
+      "titulo": "teste de produto",
+      "categoria": "teste",
+      "descricao": "",
+      "preco": 1,
+      "estoque": 1,
+      "imagem": "hero.png",
+      "id": "4epgeHt5Huc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

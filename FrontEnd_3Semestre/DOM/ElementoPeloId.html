@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Olá eu sou o título da página</h1>
+    <button onclick="Saudacao()">Clique aqui</button>
+        <button onmousemove="mouseMoveu();">Passe o mouse</button>
+        <button onmousedown="clicouBaixo();">Clique e segure</button>
+        <button onmouseup="clicouSubiu();">Solte o botão</button>
+        <button ondblclick="clicouDoubleCLick();">Clique duplo</button>
+
+    <script>
+        // alert("Alerta fora da função")
+
+        alert(`oi:`)
+        function Saudacao(){
+            alert(`Titulo:` + document.getElementById(`titulo`).textContent)
+        }
+             function mouseMoveu() {
+           
+                alert(`Mouse se moveuno botão`);
+        }
+
+             function clicouBaixo() {
+            alert(`Mouse se moveuno botão`);
+        }   
+        
+
+             function clicouSubiu() {
+            alert(`vc soltou o botao`);
+        }   
+
+             function clicouDoubleCLick() {
+            alert(`clickou duas vezes`);
+        }  
+    </script>
+</body>
+</html>

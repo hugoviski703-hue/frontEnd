@@ -1,0 +1,39 @@
+/* DESKTOP FIRST A  */
+/* DESKTOP >= 992px até o infinito*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Desktop */
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* break point - Ponto de quebra do layout */
+/* tablet <= 992px (768 até 991px)*/
+@media Screen and (max-width: 991px){
+  h1{
+    color: green;
+  }
+
+  .responsive{
+    display: none;
+  }
+  
+}
+
+
+/* Mobile  <768px (0 até 767px)*/
+@media Screen and (max-width: 767px){
+    h1{
+        color: red;
+        background-color: blueviolet;
+    }
+      .responsive{
+    display: block;
+  }
+   
+}
