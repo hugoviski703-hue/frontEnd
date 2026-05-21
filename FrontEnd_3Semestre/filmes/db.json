@@ -1,0 +1,9 @@
+{
+  "generos": [
+    {
+      "nome": "sdds",
+      "id": "0xCwPc0RlMU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
