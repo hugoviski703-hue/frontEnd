@@ -26,7 +26,7 @@ const Cadastro = (props) => {
                     </div>
                     <div className="campo_cad_genero" style={{ display: props.visibilidade }}>
                         <label htmlFor="genero">Gênero</label>
-                        <select name="genero" id="">
+                        <select name="genero" id="genero">
                             <option value="" disabled >Selecione</option>
                             <option value="">op 1</option>
                             <option value="">op 2</option>
@@ -34,7 +34,19 @@ const Cadastro = (props) => {
                         </select>
                     </div>
 
+
+                    {/* botao editar tem que ser button não submit */}
+                    
+                       { props.btnEditar &&
+                        <Botao
+                         nomeDoBotao="Cancelar"
+                        //   setEditar={props.setEditar}
+                         btnEditar={props.btnEditar}
+                         cancelarEdicao={props.cancelarEdicao}
+                         />}
+
                     <Botao nomeDoBotao="Cadastrar" />
+                    
                 </div>
             </form>
         </section>
