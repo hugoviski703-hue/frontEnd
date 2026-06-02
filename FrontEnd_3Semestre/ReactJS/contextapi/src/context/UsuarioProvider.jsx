@@ -1,0 +1,20 @@
+import { useContext, useState } from "react"
+import { UsuarioContext } from "./UsuarioContext"
+
+//disponibiliza o state do usuario de forma global
+//todos os seus filhos (children)
+export const UsuarioProvider = ({children})   => {
+        const [usuario, setUsuario] = useState("Hugo")
+
+        return(
+       <UsuarioContext.Provider
+       
+       value={{
+        usuario,
+        setUsuario
+       }}
+       >
+            {children}
+        </UsuarioContext.Provider>
+    )
+}

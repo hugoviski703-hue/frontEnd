@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
-import { CadastroFilme } from "../pages/cadastroFilme/CadastroFilme"
+import CadastroFilme from "../pages/cadastroFilme/CadastroFilme"
 import  CadastroGenero  from "../pages/cadastroGenero/CadastroGenero"
 import Login from "../pages/login/Login"
 

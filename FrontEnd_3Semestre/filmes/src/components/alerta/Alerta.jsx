@@ -10,7 +10,7 @@ export const Alerta = ({
      confirmButtonText = null,
      cancelButtonText = null,
      cancelButtonColor = "#d33",
-    confirmButtonColor = "#d6a100ff",
+    confirmButtonColor = "#d6830dff",
 
     }) => {
     return Swal.fire({
