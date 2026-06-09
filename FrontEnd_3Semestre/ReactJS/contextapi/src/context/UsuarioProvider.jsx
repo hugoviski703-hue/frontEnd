@@ -1,10 +1,16 @@
-import { useContext, useState } from "react"
+import { use, useContext, useEffect, useState } from "react"
 import { UsuarioContext } from "./UsuarioContext"
 
 //disponibiliza o state do usuario de forma global
 //todos os seus filhos (children)
 export const UsuarioProvider = ({children})   => {
-        const [usuario, setUsuario] = useState("Hugo")
+        const [usuario, setUsuario] = useState("")
+
+        //ciclo de vida
+        useEffect(() => {
+            const usuarioLogado = JSON.parse(localStorage.getItem("usuario"))
+            setUsuario(usuarioLogado)
+        },[])
 
         return(
        <UsuarioContext.Provider

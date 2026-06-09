@@ -1,124 +1,124 @@
-import "./Cadastro.css";
-import Botao from "../botao/Botao";
+    import "./Cadastro.css";
+    import Botao from "../botao/Botao";
 
-const Cadastro = (props) => {
+    const Cadastro = (props) => {
 
-    return (
+        return (
 
-        <section className="section_cadastro">
+            <section className="section_cadastro">
 
-            <form
-                onSubmit={props.funcCadastro}
-                className="layout_grid form_cadastro"
-            >
+                <form
+                    onSubmit={props.funcCadastro}
+                    className="layout_grid form_cadastro"
+                >
 
-                <h1>{props.tituloCadastro}</h1>
+                    <h1>{props.tituloCadastro}</h1>
 
-                <hr />
+                    <hr />
 
-                <div className="campos_cadastro">
+                    <div className="campos_cadastro">
 
-                    <div className="campo_cad_nome">
+                        <div className="campo_cad_nome">
 
-                        <label htmlFor="nome">
-                            Nome
-                        </label>
-
-                        <input
-                            type="text"
-                            name="nome"
-                            placeholder={`Digite o nome do ${props.placeholder}`}
-
-                            value={props.valor}
-
-                            onChange={(e) =>
-                                props.setValor(e.target.value)
-                            }
-                        />
-
-                    </div>
-
-
-                    <div
-                        className="campo_cad_genero"
-                        style={{ display: props.visibilidade }}
-                    >
-
-                        <label htmlFor="genero">
-                            Gênero
-                        </label>
-
-                        <select
-                            name="genero"
-
-                            value={props.genero}
-
-                            onChange={(e) =>
-                                props.setGenero(e.target.value)
-                            }
-                        >
-
-                            <option value="">
-                                Selecione
-                            </option>
-
-                            {props.listaGeneros?.map((item) => (
-
-                                <option
-                                    key={item.idGenero}
-                                    value={item.idGenero}
-                                >
-                                    {item.nome}
-                                </option>
-
-                            ))}
-
-                        </select>
-
-                    </div>
-
-
-                    {/* BOTÃO CANCELAR */}
-                    {props.btnEditar &&
-
-                        <Botao
-                            nomeDoBotao="Cancelar"
-
-                            btnEditar={props.btnEditar}
-
-                            cancelarEdicao={props.cancelarEdicao}
-                        />
-                    }
-
-
-                    {/* BOTÃO CADASTRAR */}
-                    <Botao nomeDoBotao="Cadastrar" />
-
-
-                    {/* INPUT IMAGEM */}
-                    {/* INPUT IMAGEM */}
-                    {props.mostrarImagem && (
-                        <>
-                            <label htmlFor="arquivo" className="btn_arquivo">
-                                Escolher Arquivo
+                            <label htmlFor="nome">
+                                Nome
                             </label>
 
                             <input
-                                id="arquivo"
-                                type="file"
-                                style={{ display: "none" }}
+                                type="text"
+                                name="nome"
+                                placeholder={`Digite o nome do ${props.placeholder}`}
+
+                                value={props.valor}
+
                                 onChange={(e) =>
-                                    props.setImagem(e.target.files[0])
+                                    props.setValor(e.target.value)
                                 }
                             />
-                        </>
-                    )}
-                </div>
 
-            </form>
+                        </div>
 
-        </section>
-    )
-}
 
-export default Cadastro;
+                        <div
+                            className="campo_cad_genero"
+                            style={{ display: props.visibilidade }}
+                        >
+
+                            <label htmlFor="genero">
+                                Gênero
+                            </label>
+
+                            <select
+                                name="genero"
+
+                                value={props.genero}
+
+                                onChange={(e) =>
+                                    props.setGenero(e.target.value)
+                                }
+                            >
+
+                                <option value="">
+                                    Selecione
+                                </option>
+
+                                {props.listaGeneros?.map((item) => (
+
+                                    <option
+                                        key={item.idGenero}
+                                        value={item.idGenero}
+                                    >
+                                        {item.nome}
+                                    </option>
+
+                                ))}
+
+                            </select>
+
+                        </div>
+
+
+                        {/* BOTÃO CANCELAR */}
+                        {props.btnEditar &&
+
+                            <Botao
+                                nomeDoBotao="Cancelar"
+
+                                btnEditar={props.btnEditar}
+
+                                cancelarEdicao={props.cancelarEdicao}
+                            />
+                        }
+
+
+                        {/* BOTÃO CADASTRAR */}
+                        <Botao nomeDoBotao="Cadastrar" />
+
+
+                        {/* INPUT IMAGEM */}
+                        {/* INPUT IMAGEM */}
+                        {props.mostrarImagem && (
+                            <>
+                                <label htmlFor="arquivo" className="btn_arquivo">
+                                    Escolher Arquivo
+                                </label>
+
+                                <input
+                                    id="arquivo"
+                                    type="file"
+                                    style={{ display: "none" }}
+                                    onChange={(e) =>
+                                        props.setImagem(e.target.files[0])
+                                    }
+                                />
+                            </>
+                        )}
+                    </div>
+
+                </form>
+
+            </section>
+        )
+    }
+
+    export default Cadastro;

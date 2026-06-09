@@ -1,25 +1,53 @@
 
 import './App.css'
-import { BrowserRouter, Route } from 'react-router-dom'
-import Header from './components/header/header'
-import Perfil from './components/perfil/perfil'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/home/home'
-import { Routes } from 'react-router-dom'
+import Perfil from './components/perfil/perfil'
+import Header from './components/header/header'
 import Produto from './components/produto/Produto'
-
+import CadastroProduto from './components/cadastrarproduto/CadastrarProduto'
+import ListaProduto from './components/listarProdutos/ListarProdutos'
+import PrivateRoute from "./routes/PrivateRoute";
 function App() {
 
   return (
-    <BrowserRouter>
-    <Header />
+   <BrowserRouter>
+   <Header/>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/perfil" element={<Perfil />} />
-      <Route path="/produto" element={<Produto />} />
-    </Routes>
-    </BrowserRouter>
-  )
-  
-}
+      {/* ROTAS PUBLICAS */}
+      <Route path='/' element={<Home/> }/>
+      <Route path='/perfil'
+       element={
+       <Perfil/> }/>
 
+   {/* ROTAS PRIVADAS */}
+      <Route path='/produto'
+       element={
+        <PrivateRoute>
+          <Produto/>
+        </PrivateRoute>
+        }
+        />
+
+      <Route path='/cadproduto'
+       element={
+        <PrivateRoute>
+           <CadastroProduto/>
+        </PrivateRoute>
+      }
+      />
+
+      <Route path='/listaproduto'
+       element={
+        <PrivateRoute>
+          <ListaProduto/>
+        </PrivateRoute>
+        }
+        />
+    </Routes>
+   </BrowserRouter>
+  )
+}
+      
 export default App
+	

@@ -9,7 +9,12 @@ const Perfil = () => {
     const [novoUsuario, setNovoUsuario] = useState()//state local
 
     //ciclo de vida e funções
-
+    //guarda o usuário no localStorage  no formato JSON
+    const login = () => {
+        localStorage.setItem("usuario", JSON.stringify(novoUsuario))
+        setUsuario(novoUsuario)
+        setNovoUsuario("")//limpa os dados do formulário
+    }
     //jsx
     return (
         <div>
@@ -18,7 +23,8 @@ const Perfil = () => {
             <input
             
                 type="text"
-                placeholder=""
+                placeholder="Digite o nome do usuário"
+                value={novoUsuario}
                 onChange={(e) =>{
                     setNovoUsuario(e.target.value)
                 }}
@@ -27,9 +33,9 @@ const Perfil = () => {
 
             <button
                 onClick={() => {
-                    setUsuario(novoUsuario)
+                    login()
                 }}
-            >Trocar Usuário</button>
+            >Entrar</button>
             <p>Novo Usuário: {novoUsuario}</p>
         </div>
 
