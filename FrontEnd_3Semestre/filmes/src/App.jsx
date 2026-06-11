@@ -1,16 +1,30 @@
-import "./App.css"
-import Login from "./pages/login/Login"
-import CadastroFilme from "./pages/cadastroFilme/CadastroFilme" 
-import CadastroGenero from "./pages/cadastroGenero/CadastroGenero"
-  import {Rotas} from "./routes/routes"
+import "./App.css";
+import { useState, useEffect } from "react";
+import { Rotas } from "./routes/routes";
 
-function App(){
+function App() {
 
-  return(
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
+
+  useEffect(() => {
+    document.body.className = darkMode ? "dark" : "light";
+
+    localStorage.setItem(
+      "theme",
+      darkMode ? "dark" : "light"
+    );
+  }, [darkMode]);
+
+  return (
     <>
-    <Rotas/>
+      <Rotas
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+      />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

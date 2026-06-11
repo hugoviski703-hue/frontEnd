@@ -190,83 +190,98 @@ const CadastroFilme = () => {
     // =========================
     // PRÉ EDITAR
     // =========================
-const preEditar = (item) => {
+    const preEditar = (item) => {
 
-    setIdEditar(item.idFilme)
+        setIdEditar(item.idFilme)
 
-    setValor(item.titulo)
+        setValor(item.titulo)
 
-    setGenero(item.idGenero)
+        setGenero(item.idGenero)
 
-    setEditar(true)
+        setEditar(true)
 
-    console.log(item)
-}
+        console.log(item)
+    }
 
 
 
     // =========================
     // EDITAR FILME
     // =========================
-    const editarFilme = async () => {
+    const editarFilme = async (e) => {
+
+        e.preventDefault();
 
         // VALIDAÇÃO
-        if (valor.trim().length == 0) {
+        if (valor.trim().length === 0) {
 
             Alerta({
                 title: "Cadastro de filme",
                 text: "Nome do filme deve ser preenchido",
                 icon: "warning"
-            })
+            });
 
-            return false
+            return false;
+        }
+
+        // VALIDAÇÃO GÊNERO
+        if (genero === "") {
+
+            Alerta({
+                title: "Cadastro de filme",
+                text: "Selecione um gênero",
+                icon: "warning"
+            });
+
+            return false;
         }
 
         // FORMDATA
-        const formData = new FormData()
+        const formData = new FormData();
 
-        formData.append("idFilme", idEditar)
+        formData.append("idFilme", idEditar);
+        formData.append("nome", valor);
+        formData.append("idGenero", genero);
 
-        formData.append("nome", valor)
-
-        formData.append("idGenero", genero)
-
-        formData.append("imagem", imagem)
+        if (imagem) {
+            formData.append("imagem", imagem);
+        }
 
         try {
 
             const retornoAPI = await api.put(
-
                 `/Filme/${idEditar}`,
-
                 formData
-            )
+            );
 
-            if (retornoAPI.status == 204 ||
-                retornoAPI.status == 200) {
+            if (
+                retornoAPI.status === 204 ||
+                retornoAPI.status === 200
+            ) {
 
                 Alerta({
                     title: "Editar Filme",
                     text: "Filme editado com sucesso!",
-                    icon: "success"
-                })
+                    icon    : "success",
+                    confirmButtonText: "OK"
+                });
 
-                limparFormulario()
+                limparFormulario();
 
-                getFilmes()
+                getFilmes();
             }
 
         } catch (error) {
 
-            console.log(error)
+            console.log(error);
 
             Alerta({
                 title: "Editar Filme",
                 text: "Erro ao editar filme",
                 icon: "error"
-            })
+            });
         }
-    }
+    };
 
 
     // =========================
@@ -283,26 +298,26 @@ const preEditar = (item) => {
 
 
     // =========================
-// GET FILMES
-// =========================
-const getFilmes = async () => {
+    // GET FILMES
+    // =========================
+    const getFilmes = async () => {
 
-    try {
+        try {
 
-        const retornoAPI = await api.get("/Filme")
+            const retornoAPI = await api.get("/Filme")
 
-        console.log("FILMES DA API:")
-        console.log(retornoAPI.data)
+            console.log("FILMES DA API:")
+            console.log(retornoAPI.data)
 
-        const dados = retornoAPI.data
+            const dados = retornoAPI.data
 
-        setListaFilmes(dados)
+            setListaFilmes(dados)
 
-    } catch (error) {
+        } catch (error) {
 
-        console.log(error)
+            console.log(error)
+        }
     }
-}   
 
 
 
@@ -385,5 +400,4 @@ const getFilmes = async () => {
         </>
     )
 }
-
 export default CadastroFilme
